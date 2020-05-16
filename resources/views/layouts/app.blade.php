@@ -19,6 +19,13 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <style>
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        list-style: none;
+    }
     .user-wrapper, .message-wrapper{
         border: 1px solid #dddddd;
         overflow-y: auto;
@@ -30,6 +37,66 @@
         cursor: pointer;
         padding: 5px 0;
         position: relative;
+    }
+    .user:hover{
+        background: #eeeeee;
+    }
+    .user:last-child{
+        margin-bottom: 0;
+    }
+    .pending{
+        background: #b600ff;
+        position: absolute;
+        left: 13px;
+        top: 9px;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-weight: 18px;
+        color: #ffffff;
+        margin: 0;
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    .media-left{
+        margin: 0 10px;
+    }
+    .media-left img {
+        width: 64px;
+        border-radius: 64px;
+    }
+    .media-body p{
+        margin: 6px 0;
+    }
+    .message-wrapper{
+        padding: 10px;
+        height: 536px;
+        background: #eeeeee;
+    }
+    .messages .message{
+        margin-bottom: 15px;
+    }
+    .messages .message :last-child{
+        margin-bottom: 0;
+    }
+    .received, .sent {
+        width: 45%;
+        padding: 3px 10px;
+        border-radius: 10px;
+    }
+    .received{
+        background: #ffffff;
+    }
+    .sent{
+        background: #3bebff;
+        float: right;
+        text-align: right;
+    }
+    .message p{
+        margin: 5px 0;
+    }
+    .date{
+        background: #eeeeee;
     }
 </style>
 
