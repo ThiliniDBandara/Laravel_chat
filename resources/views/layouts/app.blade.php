@@ -57,6 +57,7 @@
         margin: 0;
         padding-left: 5px;
         font-size: 12px;
+        line-height: 18px;
     }
     .media-left{
         margin: 0 10px;
@@ -96,8 +97,26 @@
         margin: 5px 0;
     }
     .date{
+        color: #777777;
+        font-size: 12px;
+    }
+    .active{
         background: #eeeeee;
     }
+    input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 15px 0 0 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #cccccc;
+    }
+    input[type=text]:focus{
+        border: 1px solid #aaaaaa;
+    }
+
 </style>
 
 </head>

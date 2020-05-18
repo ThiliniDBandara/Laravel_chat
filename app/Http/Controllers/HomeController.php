@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use APP\user;
+use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     /**
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        //select all users except logged in user
+        $users = User::where('id','!=', Auth::id())->get();
+        return view('home', ['users'=>$users]);
     }
 }
